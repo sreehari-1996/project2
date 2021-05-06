@@ -1,0 +1,452 @@
+.second-images{
+	position: relative;
+	
+	display: block;
+}
+.second-images img{
+	display: block;
+	display: auto;
+	width:100%;
+}
+.second-imadesc{
+	position: relative;
+	display: block;
+}
+.second-imadesc h2{
+	font-weight: bold;
+	font-size: 36px;
+	width:80%;
+	margin-top:5vh;
+}
+#main-desc 
+{
+	position: relative;
+	margin-top:2vh;
+	width:80%;
+
+
+}
+#main-desc span{
+	position: relative;
+	font-size: 14px;
+	color: gray;
+	font-weight:bold;
+}
+.second-imadesc1{
+	position: relative;
+	display: block;
+}
+.second-imadesc1 h2{
+	font-weight: bold;
+	font-size: 36px;
+	width:80%;
+	margin-top:9vh;
+}
+#main-desc1 
+{
+	position: relative;
+	margin-top:0vh;
+	width:80%;
+
+
+}
+#main-desc1 span{
+	position: relative;
+	font-size: 14px;
+	color: gray;
+	font-weight:bold;
+}
+.ok-iam{
+	position: relative;
+	text-align: center;
+	margin-top:0vh;
+	/* box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.23);*/
+		background-color: #fef6f4;
+	 padding: 5vh;
+border-radius: 32px 32px 5px 7px;
+border: 1px solid #fef6f4;
+opacity: 0.6;
+}
+.ok-iam h2{
+	position: relative;
+	font-size: 30px;
+	font-weight:bold;
+	color:#000;
+
+}
+.ok-iam h3{
+	position: relative;
+	font-size: 25px;
+	font-weight:normal;
+	color: #000;
+
+}
+.register-prg{
+	position: relative;
+	margin-left: 6vh;
+	margin-right: 6vh;
+}
+
+.regis-program h2{
+	position: relative;
+	width:60%;
+	color: #000;
+	margin-top:2vh;
+	font-size:27px;
+	font-weight: bold;
+}
+#regdesc{
+	width:89%;
+}
+#regdesc span{
+	position: relative;
+	margin-left: 0vh;
+	font-size: 14px;
+	color:gray;
+}
+#img-regs img{
+	position: relative;
+	width: 20%;
+	margin-left:1vh;
+	margin-top:2vh;
+	display: block;
+}
+#active  {
+      background-color: #ff6d41;
+      padding: 2vh;
+      width:90%;
+      border-radius: 4px 4px 4px gray;
+  }
+  .perknow {
+  	
+  	position: relative;
+  	display: block;
+  	margin-top: 0vh;
+
+  }
+  .perknow h2{
+  	text-align: center;
+  	font-weight: bold;
+  	font-size: 40px;
+  }
+  #zero-ivent{
+  	position: relative;
+  	padding:2vh;
+  	border-bottom: 1px solid #f2f2f2;
+  	border-top: 1px solid #f2f2f2;
+
+  }
+     
+    	#zero-ivent li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+    
+    /*form*/
+  
+*:focus::-moz-focus-inner {
+  border: none;
+}
+:invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+h1 {
+  font-family: "Assistant", sans-serif;
+  font-size: 2rem;
+}
+form div {
+  position: relative;
+}
+form input,
+form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color:#fff;
+  width: 100%;
+  font-family: "Monsterrat", sans-serif;
+  font-size:14px;
+
+
+  font-weight: bold;  padding:3vh;
+  transition: all 0.5s;
+}
+.ok-icon::after {
+  content: "";
+  position: absolute;
+  
+  
+  height: 12px;
+  width: 18px;
+  top: 26px;
+  right: 20px;
+  margin-top: 0;
+  -webkit-transform: rotate(-54deg);
+  transform: rotate(-54deg);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+.ok-icon::before {
+  
+  opacity: 0;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  color: red;
+  top: 26px;
+  right: 20px;
+  font-size: 1.4rem;
+}
+form input:focus {
+ 
+}
+form input:invalid + .ok-icon::before,
+form textarea:invalid + .ok-icon::before {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s 0.8s;
+  transition: opacity 0.5s 0.8s;
+}
+form input:valid + .ok-icon::after,
+form textarea:valid + .ok-icon::after {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s 0.8s;
+  transition: opacity 0.5s 0.8s;
+}
+/* this hack is taken from https://css-tricks.com/snippets/css/change-autocomplete-styles-webkit-browsers/ originaly made by https://twitter.com/lydiadugger */
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover,
+form input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+ 
+  transition: background-color 5000s ease-in-out 0s;
+}
+/* end of hack */
+form textarea {
+  height: 34px;
+  padding-right: 40px;
+  -webkit-transition: background-color 0.5s, height 0.5s;
+  transition: background-color 0.5s, height 0.5s;
+}
+form textarea::-webkit-scrollbar {
+  display: none;
+}
+form textarea:focus {
+  height: 100px;
+  -webkit-transition: background-color 0.5s, height 0.5s;
+  transition: background-color 0.5s, height 0.5s;
+  
+  
+}
+form input:valid {
+ 
+  
+}
+form textarea:valid {
+  min-height: 100px;
+  
+  
+}
+form label {
+  visibility: hidden;
+}
+form button {
+  color: white;
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  font-family: "Assistant", sans-serif;
+  font-size: 1.12rem;
+  background-color: rgb(20, 149, 172);
+  margin-top: 40px;
+}
+form:valid button:hover {
+ 
+  color: rgb(15, 15, 15);
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+form button:disabled {
+  background-color: lightgrey;
+  cursor: default;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+form:valid button {
+  background-color: rgb(20, 149, 172);
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+form:valid button:focus.show-outline {
+  border: 1px solid rgb(22, 22, 22);
+}
+.confirmation {
+  padding: 10px;
+  
+  background-color: rgb(248, 177, 177);
+  margin: 20px 0;
+}
+.main-formsec{
+	background: url("../img/footer-bg.jpg") center center no-repeat;
+color: #fff;
+font-size: 14px;
+position: relative;
+}
+#checkdeatils{
+	position: relative;
+	overflow:hidden;
+	display: block;
+}
+#checkdeatils h2{
+	text-align: center;
+	position: relative;
+	margin-top: 7vh;
+	color: white;
+	font-weight: bold;
+}
+#checkdeatils h4{
+	text-align: center;
+	position: relative;
+	margin-top: 2vh;
+	color: white;
+	font-weight: bold;
+}
+.desc-formdes{
+	text-align: center;
+	margin-top:2vh;
+}
+.desc-formdes p{
+	position: relative;
+	font-size:16px;
+	font-weight: normal;
+	color: white;
+	text-align: center;
+}
+.btn-default {
+ 
+  font-size: 13px;
+  color: #000;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-weight: bold;
+  font-size:12px;
+  border-radius: 40px;
+  background:white;
+ 
+  transition: all 0.3s ease 0s;
+  width:auto;
+}
+
+.btn-default:hover {
+  
+}
+
+/*collpase*/
+
+#accordion {
+    width: 100%;
+    min-height: 30px;
+    margin-top:3vh;
+   
+}
+.list {
+    position: relative;
+    width: 100%;
+    height: 40px;
+     border-bottom: solid 1px silver; 
+    cursor: pointer;
+    transition: 300ms;
+}
+.list:hover {
+    background: hsl(0, 0%, 95%);
+}
+.accordion_title {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.accordion_icon {
+	content: " 	&#xf107";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: gray;
+}
+.panel {
+    transition: 300ms;
+    width: 100%;
+    height: 0px;
+    background: hsl(0, 0%, 94%);
+    overflow: hidden;
+}
+.panel p {
+    padding: 10px;
+}
+.main-panel{
+	margin-left:4vh;
+	margin-right: 4vh;
+	margin-top:2vh;
+	position: relative;
+}
+.faq h2{
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+}
+.faq{
+  text-align: center;
+  position: relative;
+  display: block;
+
+}
+.copyright{
+	position: relative;
+	margin-top:4vh;
+	margin-left: 2vh;
+	float: right;
+	display: flex;
+}
+.copyright #copycat span{
+	position: relative;
+
+}
+#copycat1 ul li{
+	float: left;
+	list-style: none;
+}
+.main-section{
+	width: 100%;
+	position: relative;
+
+}
+.main-section img{
+	background-image:url(asset/img/about.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
